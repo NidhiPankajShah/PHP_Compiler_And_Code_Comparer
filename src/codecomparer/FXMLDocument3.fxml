@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.fxmisc.richtext.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="codecomparer.FXMLDocumentController3">
+   <children>
+      <BorderPane layoutX="77.0" layoutY="73.0" prefHeight="600.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <StackPane>
+               <children>
+                  <SplitPane dividerPositions="0.49899799599198397" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TitledPane fx:id="Left" layoutY="30.0" prefHeight="383.0" prefWidth="595.0" text="untitled" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="589.0">
+                                       <children>
+                                          <InlineCssTextArea fx:id="textAreaLeft" layoutX="146.0" layoutY="115.0" prefHeight="357.0" prefWidth="593.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </TitledPane>
+                              <Button fx:id="uploadLeft" layoutX="267.5" layoutY="3.5" mnemonicParsing="false" onAction="#handle" text="Upload" AnchorPane.leftAnchor="267.5" AnchorPane.topAnchor="3.5" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TitledPane fx:id="Right" animated="false" layoutY="30.0" prefHeight="383.0" prefWidth="597.0" text="untitled" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <InlineCssTextArea fx:id="textAreaRight" prefHeight="357.0" prefWidth="595.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </TitledPane>
+                              <Button fx:id="uploadRight" layoutX="269.5" layoutY="3.5" mnemonicParsing="false" onAction="#handle" text="Upload" AnchorPane.rightAnchor="268.5" AnchorPane.topAnchor="3.5" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </SplitPane>
+               </children>
+            </StackPane>
+         </center>
+         <bottom>
+            <SplitPane dividerPositions="0.4991652754590985" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TextArea fx:id="messageLeft" layoutY="24.0" prefHeight="128.0" prefWidth="596.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0" />
+                        <Label layoutX="13.0" layoutY="4.0" text="Message:" textFill="#d70a0a" AnchorPane.topAnchor="2.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TextArea fx:id="messageRight" layoutY="23.0" prefHeight="128.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="23.0" />
+                        <Label layoutX="13.0" text="Message:" textFill="#d70a0a" AnchorPane.topAnchor="2.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+               <padding>
+                  <Insets top="8.0" />
+               </padding>
+            </SplitPane>
+         </bottom>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="New Left" />
+                        <MenuItem mnemonicParsing="false" text="New Right" />
+                        <MenuItem mnemonicParsing="false" text="Open Left..." />
+                        <MenuItem mnemonicParsing="false" text="Open Right..." />
+                        <MenuItem mnemonicParsing="false" text="Save Left" />
+                        <MenuItem mnemonicParsing="false" text="Save Right" />
+                        <MenuItem mnemonicParsing="false" text="Save As Left..." />
+                        <MenuItem mnemonicParsing="false" text="Save As Right..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Print Left..." />
+                        <MenuItem mnemonicParsing="false" text="Print Right..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Exit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Undo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Cut" />
+                        <MenuItem mnemonicParsing="false" text="Copy" />
+                        <MenuItem mnemonicParsing="false" text="Paste" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Find..." />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Compare">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#compare" text="Compare Files..." />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

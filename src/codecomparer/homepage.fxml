@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="1000.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="codecomparer.HomepageController">
+   <children>
+      <ImageView layoutX="-782.0" layoutY="-420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/tech.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="button1" contentDisplay="CENTER" defaultButton="true" layoutX="497.0" layoutY="299.0" mnemonicParsing="false" onAction="#handle1" prefHeight="74.0" prefWidth="463.0" text="MERE COMPARISION" textFill="#914c4c">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" contentDisplay="CENTER" defaultButton="true" layoutX="497.0" layoutY="412.0" mnemonicParsing="false" onAction="#handle2" prefHeight="74.0" prefWidth="463.0" text="COMPARE AND COMPILE" textFill="#914c4c">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button fx:id="button3" contentDisplay="CENTER" defaultButton="true" layoutX="497.0" layoutY="526.0" mnemonicParsing="false" onAction="#handle3" prefHeight="74.0" prefWidth="463.0" text="ASSIGNMENT CHECKING" textFill="#914c4c">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="261.0" layoutY="100.0" text="DOCUMENT CODE COMPARER" textFill="#0d0d0d">
+         <font>
+            <Font size="68.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
